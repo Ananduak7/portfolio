@@ -432,7 +432,7 @@ footer {
 <section class="proposal" style="padding:120px 20px;">
     <div class="container">
         <h2 class="section-title">Submit Your Proposal</h2>
-        <form id="proposalForm">
+        <form id="proposalForm" method="POST" action="/api/proposal">
             <textarea name="proposal" placeholder="Explain your proposal or opportunity here..." required></textarea>
             <button type="submit" class="submit-btn">Send Proposal</button>
         </form>
