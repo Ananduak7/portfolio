@@ -562,7 +562,8 @@
             <!-- Ask Me Anything Form -->
             <div class="ask-anything">
                 <h3>Ask Me Anything</h3>
-                <form class="ask-form" method="POST" action="/api/ask">
+                <!--<form class="ask-form" method="POST" action="/api/ask"> -->
+              <form id="askForm" class="ask-form" method="POST" action="/api/ask">
     <textarea name="question" placeholder="Type your question here..."></textarea>
     <button type="submit" class="submit-btn">Submit</button>
 </form>
@@ -592,7 +593,7 @@ menuBtn.addEventListener('click', () => {
 // Ask Me Anything form handling
 /*document.getElementById('askForm').addEventListener('submit', function(e){
     e.preventDefault();
-    const message = this.message.value;
+    const message = this.question.value;
     if(message.trim() !== ""){
         alert("Your message has been sent! (Requires backend email service)");
         this.reset();
